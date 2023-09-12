@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body class="registration">
+    <div class="formSection">
+        <center>
+            <form action="#" id="formContainer">
+                <label for="account">Login</label>
+                <input type="email" name="email" id="email" placeholder="E-mail Address" class="textGap" required><br>
+                <input type="password" name="password" id="password" placeholder="Password" class="textGap" required><br>
+                <button type="submit" id="btn">Submit</button>
+            </form>
+           
+            <div>
+                <p>Don't have an account yet? <a href="/index.html">SignUp</a></p>
+            </div>
+        </center>
+    </div> 
+    <script>
+    const form = document.getElementById('formContainer');
+    
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      const formData = new FormData(form);
+      const entries = formData.entries();
+      const data = Object.fromEntries(entries);
+      
+      const savedData = JSON.parse(localStorage.getItem('formData'));
+      
+      if (savedData && savedData.email === data.email && savedData.password === data.password) {
+        alert('Login successful!');
+      } else {
+        alert('Invalid email or password.');
+      }
+    });
+    </script>
+</body>
+</html>

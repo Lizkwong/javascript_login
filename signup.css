@@ -1,0 +1,35 @@
+.formSection{
+    background-color: gray;
+    margin: auto;
+    width: 300px;
+    line-height: 50px;
+    border-radius: 20px;
+}
+ #formContainer{
+    /* background-color: grey; */
+    /* width: auto;
+    margin: auto; */  
+}
+.textGap{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    border-style: none;
+    width: 250px;
+}
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    padding: 5px;
+}
+#btn{
+    padding: 10px;
+    margin: 20px;
+    border-radius: 15px;
+    border-style: none;
+    /* border: none; */
+    width:100px;
+}
+span{
+    color: black;
+}

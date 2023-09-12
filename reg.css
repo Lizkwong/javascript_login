@@ -1,0 +1,26 @@
+.textField{
+    /* background-color: black; */
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    border-style: none;
+    width: 250px;
+}
+.formSection{
+    background-color: gray;
+    margin: auto;
+    width: 300px;
+    line-height: 50px;
+    border-radius: 20px;
+}
+#btn{
+    padding: 10px;
+    margin: 20px;
+    border-radius: 15px;
+    border-style: none;
+    /* border: none; */
+    width:100px;
+}
+span{
+    color: black;
+}
